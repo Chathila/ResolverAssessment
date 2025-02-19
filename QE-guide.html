@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <title>Guide</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Test Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="guide.html">Guide <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="col-sm-8 mx-auto">
+                <h1>Introduction</h1>
+                <p>
+                    This page was made to test the understanding and capabilities of potential automation engineer candidates.
+                </p>
+                <p>
+                    Using the selenium based framework (or wrapper) of your choise, write some sample tests to complete the objectives outlined in the tests below using properly formatted selectors to interact with the page's elements.
+                </p>
+                <p>
+                    For example, the following line clicks with the email input on the home page.
+                    <pre><code>browser.click('//div[@id="test-1-div"]//form[@class="form-signin"]//input[@type="email"]');
+                </code></pre>
+                </p>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="col-sm-8 mx-auto">
+                <h1>Test 1</h1>
+                <ul>
+                    <li>Navigate to the home page</li>
+                    <li>Assert that both the email address and password inputs are present as well as the login button</li>
+                    <li>Enter in an email address and password combination into the respective fields</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="col-sm-8 mx-auto">
+                <h1>Test 2</h1>
+                <ul>
+                    <li>Navigate to the home page</li>
+                    <li>In the test 2 div, assert that there are three values in the listgroup</li>
+                    <li>Assert that the second list item's value is set to "List Item 2"</li>
+                    <li>Assert that the second list item's badge value is 6</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="col-sm-8 mx-auto">
+                <h1>Test 3</h1>
+                <ul>
+                    <li>Navigate to the home page</li>
+                    <li>In the test 3 div, assert that "Option 1" is the default selected value</li>
+                    <li>Select "Option 3" from the select list</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="col-sm-8 mx-auto">
+                <h1>Test 4</h1>
+                <ul>
+                    <li>Navigate to the home page</li>
+                    <li>In the test 4 div, assert that the first button is enabled and that the second button is disabled</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="col-sm-8 mx-auto">
+                <h1>Test 5</h1>
+                <ul>
+                    <li>Navigate to the home page</li>
+                    <li>In the test 5 div, wait for a button to be displayed (note: the delay is random) and then click it</li>
+                    <li>Once you've clicked the button, assert that a success message is displayed</li>
+                    <li>Assert that the button is now disabled</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="col-sm-8 mx-auto">
+                <h1>Test 6</h1>
+                <ul>
+                    <li>Navigate to the home page</li>
+                    <li>Write a method that allows you to find the value of any cell on the grid</li>
+                    <li>Use the method to find the value of the cell at coordinates 2, 2 (staring at 0 in the top left corner)</li>
+                    <li>Assert that the value of the cell is "Ventosanzap"</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
