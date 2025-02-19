@@ -120,7 +120,7 @@ class SeleniumTestSuite {
     }
 
     static async testPopUpMessage() {
-        console.log("Running Test 5: Button State");
+        console.log("Running Test 5: Toggle Pop-up Message");
         try {
             const test5 = await this.driver.findElement(By.id("test-5-div"));
 
